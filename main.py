@@ -1,4 +1,5 @@
 import discord
+impory os
 import asyncio
 import sqlite3
 
@@ -6,7 +7,7 @@ client = discord.Client()
 
 ### 배너 카테고리에 역할설정 ! ! ! ###
 
-token = 'Nzg0NzA1OTc4ODUwNzM4MTg3.X8tMZA.0ANUgXaYLAqidhSMO_zJwo7xeNk'
+token = (access_token)
 category_id = 783535197588815912
 banner_role = '맞배너'
 logchannel_id = 784069493965455381
@@ -167,5 +168,5 @@ async def on_message(message):
             dev = 봉순#6959, id = 713666830908129290
         """
 
-
+access_token = os.environ["BOT_TOKEN"]
 client.run(token)
